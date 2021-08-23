@@ -21,7 +21,7 @@ func IsTemporaryError(err error) bool {
 	tempErr, ok := err.(interface {
 		Temporary() bool
 	})
-	return ok && tempErr.Temporary()// || isPacketTooBig(err)
+	return ok && tempErr.Temporary() || isPacketTooBig(err)
 }
 
 // IsTimeout checks whether the given error is a timeout.
