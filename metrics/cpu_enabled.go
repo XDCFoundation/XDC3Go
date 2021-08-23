@@ -39,5 +39,5 @@ func ReadCPUStats(stats *CPUStats) {
 	timeStat := timeStats[0]
 	stats.GlobalTime = int64((timeStat.User + timeStat.Nice + timeStat.System) * cpu.ClocksPerSec)
 	stats.GlobalWait = int64((timeStat.Iowait) * cpu.ClocksPerSec)
-// 	stats.LocalTime = getProcessCPUTime()
+ 	stats.LocalTime = getProcessCPUTime()
 }
