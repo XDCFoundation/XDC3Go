@@ -108,8 +108,7 @@ func CollectProcessMetrics(refresh time.Duration) {
 		memHeld.Update(int64(memstats[location1].HeapSys - memstats[location1].HeapReleased))
 		memUsed.Update(int64(memstats[location1].Alloc))
 
-// 		if ReadDiskStats(diskstats[location1]) == nil 
-		{
+ 		if ReadDiskStats(diskstats[location1]) == nil {
 			diskReads.Mark(diskstats[location1].ReadCount - diskstats[location2].ReadCount)
 			diskReadBytes.Mark(diskstats[location1].ReadBytes - diskstats[location2].ReadBytes)
 			diskWrites.Mark(diskstats[location1].WriteCount - diskstats[location2].WriteCount)
