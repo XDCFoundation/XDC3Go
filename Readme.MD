@@ -14,21 +14,21 @@
 ### Note - Please Install all below require Dependencies first.
 
 ## Requirements
-* Import this SDK in your Project like this...
+* Import this SDK in your Project like this.
+
+### XRC20 Tokens
 ```
 import(
 	"github.com/XDCFoundation/XDC3Go/XRC20"
 )
 ```
-### Note - Only for XRC20 Tokens.
-* Import this SDK in your Project like this...
+
+### XRC721 Tokens
 ```
 import(
 	"github.com/XDCFoundation/XDC3Go/XRC721"
 )
 ```
-### Note - Only for XRC721 Tokens.
-
 # Dependencies 
 ### Before run this SDK first you need to install all below Dependencies.
 
